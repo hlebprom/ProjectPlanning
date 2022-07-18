@@ -9,9 +9,13 @@ namespace DirRX.ProjectPlanning.Shared
 {
   partial class ProjectDocumentFunctions
   {
-  public override bool IsProjectDocument()
-  {
-    return _obj.Project != null && _obj.DocumentKind.ProjectsAccounting.Value;
-  }
+    /// <summary>
+    /// Документ является проектным.
+    /// </summary>
+    /// <returns>True/False</returns>
+    public override bool IsProjectDocument()
+    {
+      return _obj.Project != null && _obj.DocumentKind.ProjectsAccounting.Value;
+    }
   }
 }

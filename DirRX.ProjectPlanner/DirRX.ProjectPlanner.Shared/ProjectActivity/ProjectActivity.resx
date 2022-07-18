@@ -126,4 +126,13 @@
   <data name="NumberMustBePositive" xml:space="preserve">
     <value>The number can only take a positive value.</value>
   </data>
+  <data name="FactualCostChangeEmptyObjText" xml:space="preserve">
+    <value>Unable to update the FactualCost property of the ProjectActivity entity. _obj is null.</value>
+  </data>
+  <data name="FactualCostChangeEmptyArgsText" xml:space="preserve">
+    <value>Unable to update the FactualCost property of the ProjectActivity entity. DoublePropertyChangedEventArgs e is null.</value>
+  </data>
+  <data name="FactualCostChangeEmptyProjectPlanText" xml:space="preserve">
+    <value>Unable to update the FactualCost property of the ProjectActivity entity. _obj.ProjectPlan is null.</value>
+  </data>
 </root>

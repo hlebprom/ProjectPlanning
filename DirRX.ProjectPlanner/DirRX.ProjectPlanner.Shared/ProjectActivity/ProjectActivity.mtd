@@ -5,6 +5,15 @@
   "AccessRightsMode": "Both",
   "Actions": [
     {
+      "NameGuid": "40975f07-51e4-46d4-80d7-6592cd03f66e",
+      "Name": "SetAccessRights",
+      "GenerateHandler": true,
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "GenerateHandler"
+      ]
+    },
+    {
       "NameGuid": "bdb23def-4fa1-4103-ad73-780ff59497aa",
       "Name": "ShowSelectedEntity",
       "FastActionIconName": "pack://application:,,,/Sungero.ClientResources;component/Images/PNG/16x16/OpenRecord_dark.svg",
@@ -43,6 +52,7 @@
   "BaseGuid": "04581d26-0780-4cfd-b3cd-c2cafc5798b0",
   "CanBeNavigationPropertyType": true,
   "CanBeSearch": false,
+  "CanBeUsedInIntegration": true,
   "Code": "PrjctActivity",
   "CreationAreaMetadata": {
     "NameGuid": "f7766750-eee2-4fcd-8003-5c06a90d1f44",
@@ -69,13 +79,13 @@
           "Name": "Main",
           "ColumnDefinitions": [
             {
-              "Percentage": 33.33
+              "Percentage": 32.85
             },
             {
-              "Percentage": 33.33
+              "Percentage": 33.76
             },
             {
-              "Percentage": 33.33
+              "Percentage": 33.38
             }
           ]
         },
@@ -128,19 +138,6 @@
           "ParentGuid": "ab07315d-4429-4880-b6e5-22418a4eb869",
           "PropertyGuid": "f7639e98-f9d0-4e06-9aad-26a79f1c797f",
           "RowNumber": 2,
-          "RowSpan": 1,
-          "Settings": []
-        },
-        {
-          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
-          "NameGuid": "e44d5853-d323-4283-8724-32fd45396305",
-          "Name": "RespEmployee",
-          "ColumnNumber": 0,
-          "ColumnSpan": 3,
-          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
-          "ParentGuid": "ab07315d-4429-4880-b6e5-22418a4eb869",
-          "PropertyGuid": "51cda7eb-a7db-4fdb-85f9-c697f18871bc",
-          "RowNumber": 3,
           "RowSpan": 1,
           "Settings": []
         },
@@ -224,19 +221,48 @@
         },
         {
           "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "ee53d877-b054-405b-8133-8d19679377bd",
+          "Name": "Performers",
+          "ColumnNumber": 0,
+          "ColumnSpan": 3,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+          "ParentGuid": "ab07315d-4429-4880-b6e5-22418a4eb869",
+          "PropertyGuid": "48f290ee-423f-4723-9b30-f7661873204e",
+          "RowNumber": 3,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "ebd7eb36-e773-4b4f-996d-1d9f032ff6e7",
+          "Name": "ControlGroup",
+          "ColumnNumber": 0,
+          "ColumnSpan": 3,
+          "GroupType": "WithTitleNoBorder",
+          "ParentGuid": "ab07315d-4429-4880-b6e5-22418a4eb869",
+          "RowNumber": 6,
+          "RowSpan": 1
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
           "NameGuid": "40d982e4-5f86-45b9-8841-0d45c8c7cc8c",
           "Name": "Control",
           "ColumnNumber": 0,
-          "ColumnSpan": 3,
+          "ColumnSpan": 1,
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.GridControlToChildCollectionBinder",
-          "ParentGuid": "ab07315d-4429-4880-b6e5-22418a4eb869",
+          "HeaderLocation": "None",
+          "ParentGuid": "ebd7eb36-e773-4b4f-996d-1d9f032ff6e7",
           "PropertyGuid": "46a0b548-bb31-4d73-ae59-0fc00081f14a",
-          "RowNumber": 6,
+          "RowNumber": 0,
           "RowSpan": 1,
           "Settings": [
             {
               "Name": "Height",
               "Value": 250
+            },
+            {
+              "Name": "NeedExpand",
+              "Value": true
             }
           ]
         }
@@ -245,7 +271,9 @@
   ],
   "HandledEvents": [
     "CreatedServer",
-    "ShowingClient"
+    "ShowingClient",
+    "AfterSaveServer",
+    "BeforeDeleteServer"
   ],
   "HideFromNavigationEditorCreationArea": true,
   "IconName": "ProjectActivity.ico",
@@ -259,7 +287,8 @@
     "AccessRightsMode",
     "IsAutoCreated",
     "IsVisible",
-    "IconName"
+    "IconName",
+    "CanBeUsedInIntegration"
   ],
   "Properties": [
     {
@@ -314,7 +343,7 @@
       "NameGuid": "c7edf45e-b529-46e5-95ce-1264a2313907",
       "Name": "ProjectPlan",
       "Code": "ProjectPlan",
-      "EntityGuid": "b0af2406-a454-48d5-8e94-e9f69012c8a1",
+      "EntityGuid": "a319de81-7897-43e0-8f52-3eefbc011f91",
       "FlatListInStandaloneLookup": true,
       "IsEnabled": false,
       "IsRequired": true,
@@ -333,16 +362,6 @@
       "PreviousPropertyGuid": "c7edf45e-b529-46e5-95ce-1264a2313907"
     },
     {
-      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
-      "NameGuid": "51cda7eb-a7db-4fdb-85f9-c697f18871bc",
-      "Name": "ResponsibleEmployee",
-      "Code": "RespEmpl",
-      "EntityGuid": "b7905516-2be5-4931-961c-cb38d5677565",
-      "IsEnabled": false,
-      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
-      "PreviousPropertyGuid": "f7639e98-f9d0-4e06-9aad-26a79f1c797f"
-    },
-    {
       "$type": "Sungero.Metadata.DateTimePropertyMetadata, Sungero.Metadata",
       "NameGuid": "a1e8502c-9afd-45b0-9bb5-501ebff043ef",
       "Name": "StartDate",
@@ -350,7 +369,7 @@
       "IsEnabled": false,
       "IsRequired": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DateTimeEditorToDateTimeBinder",
-      "PreviousPropertyGuid": "51cda7eb-a7db-4fdb-85f9-c697f18871bc"
+      "PreviousPropertyGuid": "f7639e98-f9d0-4e06-9aad-26a79f1c797f"
     },
     {
       "$type": "Sungero.Metadata.DateTimePropertyMetadata, Sungero.Metadata",
@@ -508,6 +527,34 @@
       "Code": "NumberVersion",
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
       "PreviousPropertyGuid": "e9981ec8-59cd-49e1-b1ce-d2a85f91b5f6"
+    },
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "a77d0d71-b856-434a-a37c-d56cb9f6fed3",
+      "Name": "Performers",
+      "Code": "Performers",
+      "EntityGuid": "87cefbb3-312d-45c8-91e0-f4004c4e8578",
+      "IsShowedInList": false,
+      "PreviousPropertyGuid": "1cb4a3f1-5dc6-402f-947e-5c8e2118890c"
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "48f290ee-423f-4723-9b30-f7661873204e",
+      "Name": "Responsible",
+      "Code": "Responsible",
+      "EntityGuid": "b7905516-2be5-4931-961c-cb38d5677565",
+      "IsEnabled": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "a77d0d71-b856-434a-a37c-d56cb9f6fed3"
+    },
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "a5ed7ca8-a0c6-40d3-b7f1-2c8bf65f060a",
+      "Name": "ResourcesCapacity",
+      "Code": "ProjectActivi1",
+      "EntityGuid": "6e2d9247-0bfe-467d-a7e7-48911eb88b13",
+      "IsShowedInList": false,
+      "PreviousPropertyGuid": "48f290ee-423f-4723-9b30-f7661873204e"
     }
   ],
   "PublicFunctions": [
@@ -517,8 +564,8 @@
       "Parameters": [
         {
           "Name": "projectPlan",
-          "ParameterType": "global::DirRX.ProjectPlanner.IProjectPlan",
-          "ParameterTypeFullName": "DirRX.ProjectPlanner.IProjectPlan, Sungero.Domain.Interfaces"
+          "ParameterType": "global::DirRX.ProjectPlanner.IProjectPlanRX",
+          "ParameterTypeFullName": "DirRX.ProjectPlanner.IProjectPlanRX, Sungero.Domain.Interfaces"
         }
       ],
       "Placement": "Shared",
@@ -530,7 +577,10 @@
   "ResourcesKeys": [
     "ExistSubordinateActivityText",
     "FullNumberExists",
-    "NumberMustBePositive"
+    "NumberMustBePositive",
+    "FactualCostChangeEmptyObjText",
+    "FactualCostChangeEmptyArgsText",
+    "FactualCostChangeEmptyProjectPlanText"
   ],
   "RibbonCardMetadata": {
     "NameGuid": "a9a0c845-e8ad-414c-a518-2365a440ccfd",

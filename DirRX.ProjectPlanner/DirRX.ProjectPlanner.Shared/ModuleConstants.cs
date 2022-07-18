@@ -7,18 +7,11 @@ namespace DirRX.ProjectPlanner.Constants
   {
 
     /// <summary>
-    /// Узел сайта в конфиге.
-    /// </summary>
-    public const string XmlNodeSite = "//var[@name='GANTT_SITE']";
-    
-    public const string XmlNodeTenant = "//tenant";
-
-    /// <summary>
     /// Промежуток в минуток, по истечении которого снимать блокировку.
     /// </summary>
     public const int UnlockMinutes = 5;
     
-    public static readonly Guid ProjectPlanDocKindGuid = Guid.Parse("8f38ffcb-2302-43a7-9623-6eaa6136eccc");
+    public static readonly Guid ProjectPlanDocKindGuid = Guid.Parse("a319de81-7897-43e0-8f52-3eefbc011f91");
     /// <summary>
     /// Гуид модуля планирования проектов.
     /// </summary>
@@ -67,8 +60,22 @@ namespace DirRX.ProjectPlanner.Constants
     public const string DontUpdateModified = "DontUpdateModified";
     
     /// <summary>
+    /// Типы ресурсов.
+    /// </summary>
+    public static class ResourceTypes
+    {
+      public const string Users = "Users";
+      public const string MaterialResources = "MaterialResources";
+    }
+    
+    /// <summary>
     /// Изменение содержимого папки.
     /// </summary>
     public static readonly Guid ChangeContent = Guid.Parse("344A32D8-9814-4BB8-8D86-1F65E43FDA25");
+    
+    /// <summary>
+    /// Относительный адрес клиента.
+    /// </summary>
+    public const string DefaultClientAddress = "projectplanning";
   }
 }

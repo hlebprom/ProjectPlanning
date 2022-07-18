@@ -15,7 +15,10 @@ namespace DirRX.ProjectPlanning.Module.Projects.Server
 			base.Initializing(e);
 			GrantRightsOnProjectFolder();
 		}
-
+		
+    /// <summary>
+    /// Выдача прав на папку проекта.
+    /// </summary>
 		public void GrantRightsOnProjectFolder()
 		{
 			var allUsers = Roles.AllUsers;

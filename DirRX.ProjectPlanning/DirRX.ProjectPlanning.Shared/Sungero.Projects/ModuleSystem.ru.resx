@@ -165,4 +165,16 @@
   <data name="JobDescription_be8a8c8c9ebf415e8260d4437b76e3d1" xml:space="preserve">
     <value>Автоматическое назначение прав на документы</value>
   </data>
+  <data name="CoverAction_ShowResourcesDirRX" xml:space="preserve">
+    <value>Реестр ресурсов</value>
+  </data>
+  <data name="CoverDescription_ShowResourcesDirRX" xml:space="preserve">
+    <value>Реестр ресурсов</value>
+  </data>
+  <data name="CoverDescription_ShowResourcesTypeDirRX" xml:space="preserve">
+    <value>Настройка доступных типов ресурсов.</value>
+  </data>
+  <data name="CoverAction_ShowResourcesTypeDirRX" xml:space="preserve">
+    <value>Типы ресурсов</value>
+  </data>
 </root>

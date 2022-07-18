@@ -16,9 +16,9 @@ namespace DirRX.ProjectPlanner.Server
     /// <param name="project">Проект.</param>
     /// <returns>Этапы по проекту.</returns>
     [Remote, Public]
-    public static IQueryable<IProjectActivity> GetActivities(IProjectPlan projectPlan)
+    public static IQueryable<IProjectActivity> GetActivities(IProjectPlanRX projectPlan)
     {
-      return ProjectActivities.GetAll().Where(c => ProjectPlans.Equals(c.ProjectPlan, projectPlan));
+      return ProjectActivities.GetAll().Where(a => ProjectPlanRXes.Equals(a.ProjectPlan.Id, projectPlan.Id));
     }
     
     /// <summary>
@@ -29,7 +29,7 @@ namespace DirRX.ProjectPlanner.Server
     [Remote]
     public static IQueryable<IProjectActivity> GetChildActivities(IProjectActivity activity)
     {
-      return ProjectActivities.GetAll().Where(c => ProjectPlans.Equals(c.ProjectPlan, activity.ProjectPlan) && ProjectActivities.Equals(activity, c.LeadingActivity));
+      return ProjectActivities.GetAll().Where(c => ProjectPlanRXes.Equals(c.ProjectPlan, activity.ProjectPlan) && ProjectActivities.Equals(activity, c.LeadingActivity));
     }
 
     /// <summary>

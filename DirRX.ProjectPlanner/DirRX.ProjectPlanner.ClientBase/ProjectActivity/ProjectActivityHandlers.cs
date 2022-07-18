@@ -12,8 +12,12 @@ namespace DirRX.ProjectPlanner
 
 		public override void Showing(Sungero.Presentation.FormShowingEventArgs e)
 		{
-			var webSite = DirRX.ProjectPlanner.PublicFunctions.Module.Remote.GetWebSite();
-			DirRX.ProjectPlanner.PublicFunctions.Module.RunPlannerApp(webSite, _obj.ProjectPlan.Id, _obj.Id, _obj.NumberVersion.Value, Users.Current.Id, true);
+		  bool needOpenWeb = true;
+		  if(!e.Params.TryGetValue("NeedOpenWeb", out needOpenWeb))
+		  {
+			 var webSite = DirRX.ProjectPlanner.PublicFunctions.Module.Remote.GetWebSite();			
+			 DirRX.ProjectPlanner.PublicFunctions.Module.RunPlannerApp(webSite, _obj.ProjectPlan.Id, _obj.Id, _obj.NumberVersion.Value, Users.Current.Id, !_obj.AccessRights.CanUpdate());
+		  }
 		}
 
 		public virtual void NumberValueInput(Sungero.Presentation.IntegerValueInputEventArgs e)

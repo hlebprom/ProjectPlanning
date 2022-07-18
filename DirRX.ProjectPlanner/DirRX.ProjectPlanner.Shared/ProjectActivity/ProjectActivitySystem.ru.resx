@@ -129,9 +129,6 @@
   <data name="Property_LeadingActivity" xml:space="preserve">
     <value>Ведущий этап</value>
   </data>
-  <data name="Property_ResponsibleEmployee" xml:space="preserve">
-    <value>Ответственный</value>
-  </data>
   <data name="Property_StartDate" xml:space="preserve">
     <value>Дата начала</value>
   </data>
@@ -187,10 +184,10 @@
     <value>Индекс сортировки</value>
   </data>
   <data name="Enum_Status_Active" xml:space="preserve">
-    <value>Открытая</value>
+    <value>Открыт</value>
   </data>
   <data name="Enum_Status_Closed" xml:space="preserve">
-    <value>Закрытая</value>
+    <value>Закрыт</value>
   </data>
   <data name="Property_Priority" xml:space="preserve">
     <value>Приоритет</value>
@@ -217,10 +214,10 @@
     <value>В работе</value>
   </data>
   <data name="Enum_Status_Completed" xml:space="preserve">
-    <value>Завершена</value>
+    <value>Завершён</value>
   </data>
   <data name="Enum_Status_Deferred" xml:space="preserve">
-    <value>Отложена</value>
+    <value>Отложен</value>
   </data>
   <data name="Action_OpenInNewTab" xml:space="preserve">
     <value>Открыть в новой вкладке</value>
@@ -233,5 +230,14 @@
   </data>
   <data name="Action_ShowSelectedEntityDescription" xml:space="preserve">
     <value>Открытие карточки записи.</value>
+  </data>
+  <data name="Property_Performers" xml:space="preserve">
+    <value>Список исполнителей</value>
+  </data>
+  <data name="Property_Responsible" xml:space="preserve">
+    <value>Ответственный</value>
+  </data>
+  <data name="ControlGroup_ebd7eb36e7734b4f996d1d9f032ff6e7" xml:space="preserve">
+    <value>Предшественники</value>
   </data>
 </root>

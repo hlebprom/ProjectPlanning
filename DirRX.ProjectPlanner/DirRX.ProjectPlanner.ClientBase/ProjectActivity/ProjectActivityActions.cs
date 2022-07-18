@@ -11,7 +11,16 @@ namespace DirRX.ProjectPlanner.Client
 	partial class ProjectActivityActions
 	{
 
+    public override void SetAccessRights(Sungero.Domain.Client.ExecuteActionArgs e)
+    {
+      e.Params.AddOrUpdate("NeedOpenWeb", false);
+      base.SetAccessRights(e);
+    }
 
+    public override bool CanSetAccessRights(Sungero.Domain.Client.CanExecuteActionArgs e)
+    {
+      return base.CanSetAccessRights(e);
+    }
 
 		public virtual void ShowActivities(Sungero.Domain.Client.ExecuteActionArgs e)
 		{

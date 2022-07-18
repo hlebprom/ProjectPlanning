@@ -9,17 +9,17 @@ namespace DirRX.ProjectPlanning.Module.Projects.Server
 	partial class ProjectsPlansDirRXFolderHandlers
 	{
 
-		public virtual IQueryable<DirRX.ProjectPlanner.IProjectPlan> ProjectsPlansDirRXDataQuery(IQueryable<DirRX.ProjectPlanner.IProjectPlan> query)
+		public virtual IQueryable<DirRX.ProjectPlanner.IProjectPlanRX> ProjectsPlansDirRXDataQuery(IQueryable<DirRX.ProjectPlanner.IProjectPlanRX> query)
 		{
 			if (_filter == null)
 				return query;
 			
 			// Фильтр по состоянию.
 			if (_filter.Active || _filter.Closed || _filter.Closing || _filter.Initiation)
-				query = query.Where(x => (_filter.Active && x.Stage == DirRX.ProjectPlanner.ProjectPlan.Stage.Execution) ||
-				                    (_filter.Closed && x.Stage == DirRX.ProjectPlanner.ProjectPlan.Stage.Completed) ||
-				                    (_filter.Closing && x.Stage == DirRX.ProjectPlanner.ProjectPlan.Stage.Completion) ||
-				                    (_filter.Initiation && x.Stage == DirRX.ProjectPlanner.ProjectPlan.Stage.Initiation));
+				query = query.Where(x => (_filter.Active && x.Stage == DirRX.ProjectPlanner.ProjectPlanRX.Stage.Execution) ||
+				                    (_filter.Closed && x.Stage == DirRX.ProjectPlanner.ProjectPlanRX.Stage.Completed) ||
+				                    (_filter.Closing && x.Stage == DirRX.ProjectPlanner.ProjectPlanRX.Stage.Completion) ||
+				                    (_filter.Initiation && x.Stage == DirRX.ProjectPlanner.ProjectPlanRX.Stage.Initiation));
 
 			var today = Calendar.UserToday;
 			
@@ -34,8 +34,8 @@ namespace DirRX.ProjectPlanning.Module.Projects.Server
 			}
 			
 			if (_filter.StartPeriodThisMonth || (_filter.StartDateRangeFrom != null || _filter.StartDateRangeTo != null))
-				query = query.Where(x => (x.StartDate.Between(startDateBeginPeriod, startDateEndPeriod) && !Equals(x.Stage, DirRX.ProjectPlanner.ProjectPlan.Stage.Completed)) ||
-				                    (x.ActualStartDate.Between(startDateBeginPeriod, startDateEndPeriod) && Equals(x.Stage, DirRX.ProjectPlanner.ProjectPlan.Stage.Completed)));
+				query = query.Where(x => (x.StartDate.Between(startDateBeginPeriod, startDateEndPeriod) && !Equals(x.Stage, DirRX.ProjectPlanner.ProjectPlanRX.Stage.Completed)) ||
+				                    (x.ActualStartDate.Between(startDateBeginPeriod, startDateEndPeriod) && Equals(x.Stage, DirRX.ProjectPlanner.ProjectPlanRX.Stage.Completed)));
 
 			// Фильтр по дате окончания проекта.
 			var finishDateBeginPeriod = _filter.FinishDateRangeFrom ?? Calendar.SqlMinValue;
@@ -48,8 +48,8 @@ namespace DirRX.ProjectPlanning.Module.Projects.Server
 			}
 			
 			if (_filter.FinishPeriodThisMonth || (_filter.FinishDateRangeFrom != null || _filter.FinishDateRangeTo != null))
-				query = query.Where(x => (x.EndDate.Between(finishDateBeginPeriod, finishDateEndPeriod) && !Equals(x.Stage, DirRX.ProjectPlanner.ProjectPlan.Stage.Completed)) ||
-				                    (x.ActualFinishDate.Between(finishDateBeginPeriod, finishDateEndPeriod) && Equals(x.Stage, DirRX.ProjectPlanner.ProjectPlan.Stage.Completed)));
+				query = query.Where(x => (x.EndDate.Between(finishDateBeginPeriod, finishDateEndPeriod) && !Equals(x.Stage, DirRX.ProjectPlanner.ProjectPlanRX.Stage.Completed)) ||
+				                    (x.ActualFinishDate.Between(finishDateBeginPeriod, finishDateEndPeriod) && Equals(x.Stage, DirRX.ProjectPlanner.ProjectPlanRX.Stage.Completed)));
 			
 			return query;
 		}

@@ -124,9 +124,54 @@
     <value>ProjectPlaner</value>
   </data>
   <data name="JobDisplayName_60f15c6f40154eae844ecfa0db83e6c3" xml:space="preserve">
-    <value>Sync access rights project plan and project</value>
+    <value>Projects. Sync access rights project plan and project</value>
   </data>
   <data name="JobDescription_60f15c6f40154eae844ecfa0db83e6c3" xml:space="preserve">
     <value>Sync access rights project plan and project</value>
+  </data>
+  <data name="AsyncHandler_Description_d2723e4ce0504ca78019ebe5cc0de313" xml:space="preserve">
+    <value>Grant rights responsible of project's activity.</value>
+  </data>
+  <data name="sf_06b4d7f2_3eeb_4cb7_bf2f_191717a913f6" xml:space="preserve">
+    <value>Projects execution</value>
+  </data>
+  <data name="sf_0ae51445_3818_4794_8165_a9f69c58e00d" xml:space="preserve">
+    <value>Projects execution</value>
+  </data>
+  <data name="FilterPanel_Performer_6146fa2c0db84bfe8b889e4f7db646a7" xml:space="preserve">
+    <value>Performer</value>
+  </data>
+  <data name="FilterPanel_Me_09074441ac9f497bb8cbc968adecc1a9" xml:space="preserve">
+    <value>Me</value>
+  </data>
+  <data name="FilterPanel_All_333eafde37dd4b358559abf44f7a431f" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="FilterPanel_Selected_82053e1d24b041babc69af9ec604d68d" xml:space="preserve">
+    <value>Selected</value>
+  </data>
+  <data name="FilterPanel_ProjectPlan_3d4ecdebdc5e4c4aa498c47d070c8bb4" xml:space="preserve">
+    <value>Project plan</value>
+  </data>
+  <data name="FilterPanel_Author_ab0dd1b05dc6478687efe2a32f0d6153" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="FilterPanel_Me_80a1d21559a74a568d53c3adcf0f79c5" xml:space="preserve">
+    <value>Me</value>
+  </data>
+  <data name="FilterPanel_All_72313a824bd4490f94a26f5c486df9df" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="FilterPanel_Selected_416b829c135241b3bd45fe22f5bb9b39" xml:space="preserve">
+    <value>Selected</value>
+  </data>
+  <data name="FilterPanel_ProjectPlan_7cb53becae4f43e8b49321a03cd7f7a7" xml:space="preserve">
+    <value>Project plan</value>
+  </data>
+  <data name="AsyncHandler_Description_a0deeb8bb27e411f8069705b2d911df0" xml:space="preserve">
+    <value>ConvertPlanAsync</value>
+  </data>
+  <data name="AsyncHandler_Description_6bcda5b5e8854226ae760a8a9e9fe9c7" xml:space="preserve">
+    <value>GeneratePlanBody</value>
   </data>
 </root>

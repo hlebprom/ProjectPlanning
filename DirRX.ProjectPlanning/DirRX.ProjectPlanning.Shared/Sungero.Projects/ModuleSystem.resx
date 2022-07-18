@@ -165,4 +165,16 @@
   <data name="JobDescription_be8a8c8c9ebf415e8260d4437b76e3d1" xml:space="preserve">
     <value>Grant access rights to documents automatically</value>
   </data>
+  <data name="CoverAction_ShowResourcesDirRX" xml:space="preserve">
+    <value>Show Resources</value>
+  </data>
+  <data name="CoverDescription_ShowResourcesDirRX" xml:space="preserve">
+    <value>Show resources</value>
+  </data>
+  <data name="CoverAction_ShowResourcesTypeDirRX" xml:space="preserve">
+    <value>Show Resource type</value>
+  </data>
+  <data name="CoverDescription_ShowResourcesTypeDirRX" xml:space="preserve">
+    <value>Manage resource types.</value>
+  </data>
 </root>

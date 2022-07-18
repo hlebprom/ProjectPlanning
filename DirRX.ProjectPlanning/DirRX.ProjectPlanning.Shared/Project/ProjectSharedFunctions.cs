@@ -15,16 +15,13 @@ namespace DirRX.ProjectPlanning.Shared
 		/// </summary>
 		public void SetPropertiesAvailability()
 		{
-			var haveProjectPlan = _obj.ProjectPlanDirRX == null;
-			_obj.State.Properties.StartDate.IsEnabled = haveProjectPlan;
-			_obj.State.Properties.EndDate.IsEnabled = haveProjectPlan;
-			_obj.State.Properties.ActualStartDate.IsEnabled = haveProjectPlan;
-			_obj.State.Properties.ActualFinishDate.IsEnabled = haveProjectPlan;
-			_obj.State.Properties.BaselineWork.IsEnabled = haveProjectPlan;
-			_obj.State.Properties.BaselineWorkType.IsEnabled = haveProjectPlan;
-			_obj.State.Properties.ExecutionPercent.IsEnabled = false;
-			_obj.State.Properties.PlannedCosts.IsEnabled = false;
-			_obj.State.Properties.FactualCosts.IsEnabled = false;
+			var haventProjectPlan = _obj.ProjectPlanDirRX == null;
+			_obj.State.Properties.StartDate.IsEnabled = haventProjectPlan;
+			_obj.State.Properties.EndDate.IsEnabled = haventProjectPlan;
+			_obj.State.Properties.ActualStartDate.IsEnabled = haventProjectPlan;
+			_obj.State.Properties.ActualFinishDate.IsEnabled = haventProjectPlan;
+			_obj.State.Properties.BaselineWork.IsEnabled = haventProjectPlan;
+			_obj.State.Properties.BaselineWorkType.IsEnabled = haventProjectPlan;
 		}
 	}
 }

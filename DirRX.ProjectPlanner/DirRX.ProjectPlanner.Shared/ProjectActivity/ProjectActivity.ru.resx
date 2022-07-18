@@ -126,4 +126,13 @@
   <data name="NumberMustBePositive" xml:space="preserve">
     <value>Номер может принимать только положительное значение.</value>
   </data>
+  <data name="FactualCostChangeEmptyObjText" xml:space="preserve">
+    <value>Невозможно обновить свойство FactualCost сущности ProjectActivity. _obj равен null.</value>
+  </data>
+  <data name="FactualCostChangeEmptyArgsText" xml:space="preserve">
+    <value>Невозможно обновить свойство FactualCost сущности ProjectActivity. DoublePropertyChangedEventArgs e равен null.</value>
+  </data>
+  <data name="FactualCostChangeEmptyProjectPlanText" xml:space="preserve">
+    <value>Невозможно обновить свойство FactualCost сущности ProjectActivity. _obj.ProjectPlan равен null.</value>
+  </data>
 </root>

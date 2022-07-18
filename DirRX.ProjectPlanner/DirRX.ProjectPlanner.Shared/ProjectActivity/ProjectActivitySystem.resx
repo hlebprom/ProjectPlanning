@@ -129,9 +129,6 @@
   <data name="Property_LeadingActivity" xml:space="preserve">
     <value>Leading activity</value>
   </data>
-  <data name="Property_ResponsibleEmployee" xml:space="preserve">
-    <value>Resp. Employee</value>
-  </data>
   <data name="Property_StartDate" xml:space="preserve">
     <value>Start date</value>
   </data>
@@ -254,5 +251,17 @@
   </data>
   <data name="Action_ShowSelectedEntityDescription" xml:space="preserve">
     <value>Open card of the selected item.</value>
+  </data>
+  <data name="Property_Performers" xml:space="preserve">
+    <value>Performers</value>
+  </data>
+  <data name="Property_Responsible" xml:space="preserve">
+    <value>Responsible</value>
+  </data>
+  <data name="ControlGroup_ebd7eb36e7734b4f996d1d9f032ff6e7" xml:space="preserve">
+    <value>Predecessors</value>
+  </data>
+  <data name="Property_ResourcesCapacity" xml:space="preserve">
+    <value>ResourcesCapacity</value>
   </data>
 </root>

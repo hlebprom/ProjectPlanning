@@ -14,6 +14,22 @@
     "Actions": [
       {
         "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "0aa64e8b-e7b7-4059-8134-9b7d9dd0efb5",
+        "Name": "ShowResourcesTypeDirRX",
+        "EntityTypeId": "8bb517a6-3c6c-4848-8cd4-8f760360188d",
+        "GroupId": "424630f0-89e0-4617-86a1-66e670f6232e",
+        "PreviousItemGuid": "950a0e06-0eac-41b2-916f-6d64a2140869"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "a14f80f1-8043-4a2e-80de-7c3ffa5b90f6",
+        "Name": "ShowResourcesDirRX",
+        "EntityTypeId": "0adeff79-e4d2-4edf-8ec9-b8dd63990b0b",
+        "GroupId": "821917ab-51b3-452e-997e-47752771a991",
+        "PreviousItemGuid": "f77ef339-1caa-44d2-a850-4f6f091821d4"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
         "NameGuid": "c061a6af-4094-451e-bccd-dc5d7be31544",
         "Name": "ProjectsList",
         "EntityTypeId": "31dbf2da-5396-438a-b337-cb4bfb3f19f3",
@@ -121,7 +137,7 @@
     {
       "NameGuid": "03a19579-a42e-4974-8a8c-820eafd4bcaa",
       "Name": "ProjectsPlansDirRX",
-      "DefaultContentType": "b0af2406-a454-48d5-8e94-e9f69012c8a1",
+      "DefaultContentType": "a319de81-7897-43e0-8f52-3eefbc011f91",
       "DisplayType": "Module",
       "FilterPanel": {
         "NameGuid": "65394326-3325-4735-a345-1acc70db57d2",
@@ -248,7 +264,7 @@
       "NeedShowMarkedCount": false
     }
   ],
-  "Version": "4.2.31.0",
+  "Version": "4.2.28.0",
   "Widgets": [],
   "Versions": [
     {

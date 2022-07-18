@@ -270,4 +270,10 @@
   <data name="Property_ProjectPlanDirRX" xml:space="preserve">
     <value>Main project plan</value>
   </data>
+  <data name="Enum_Status_Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="Enum_Status_Closed" xml:space="preserve">
+    <value>Closed</value>
+  </data>
 </root>

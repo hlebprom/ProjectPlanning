@@ -10,9 +10,9 @@ namespace DirRX.ProjectPlanner.Server
 	partial class OpensProjectPlansFromCardFunctions
 	{
 		[Remote]
-		public static void CreateEntry(IProjectPlan projectPlan)
+		public static void CreateEntry(IProjectPlanRX projectPlan)
 		{
-			if (!OpensProjectPlansFromCards.GetAll(x => ProjectPlans.Equals(x.PrjectPlan, projectPlan)).Any())
+			if (!OpensProjectPlansFromCards.GetAll(x => ProjectPlanRXes.Equals(x.PrjectPlan, projectPlan)).Any())
 			{
 				var entry = OpensProjectPlansFromCards.Create();
 				entry.PrjectPlan = projectPlan;
@@ -22,9 +22,9 @@ namespace DirRX.ProjectPlanner.Server
 		}
 		
 		[Remote]
-		public static void DeleteEntry(IProjectPlan projectPlan)
+		public static void DeleteEntry(IProjectPlanRX projectPlan)
 		{
-			var entry = OpensProjectPlansFromCards.GetAll(x => ProjectPlans.Equals(x.PrjectPlan, projectPlan) && Users.Equals(x.User, Users.Current)).FirstOrDefault();
+			var entry = OpensProjectPlansFromCards.GetAll(x => ProjectPlanRXes.Equals(x.PrjectPlan, projectPlan) && Users.Equals(x.User, Users.Current)).FirstOrDefault();
 			if (entry != null)
 				OpensProjectPlansFromCards.Delete(entry);
 		}

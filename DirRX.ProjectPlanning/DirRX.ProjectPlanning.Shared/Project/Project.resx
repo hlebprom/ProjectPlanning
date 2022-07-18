@@ -141,4 +141,10 @@
   <data name="NotFoundProjectPlan" xml:space="preserve">
     <value>No plans related to this project were found. Create a new one?</value>
   </data>
+  <data name="CloseProjectErrorT" xml:space="preserve">
+    <value>TODO</value>
+  </data>
+  <data name="ReopenProjectError" xml:space="preserve">
+    <value>Невозможно переоткрыть проект. Карточка плана проекта заблокирована пользователем {0}.</value>
+  </data>
 </root>

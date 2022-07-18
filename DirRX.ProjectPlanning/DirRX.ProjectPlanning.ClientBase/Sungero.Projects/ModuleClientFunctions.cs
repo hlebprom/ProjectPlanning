@@ -8,14 +8,16 @@ namespace DirRX.ProjectPlanning.Module.Projects.Client
 {
 	partial class ModuleFunctions
 	{
-
+    /// <summary>
+    /// Действие на обложке. Диалог создания документа.
+    /// </summary>
 		public override void CreateDocument()
 		{
 			ProjectDocuments.CreateDocumentWithCreationDialog(ProjectDocuments.Info,
                                                         Sungero.Docflow.SimpleDocuments.Info,
                                                         Sungero.Docflow.Addendums.Info,
                                                         Sungero.Docflow.MinutesBases.Info,
-                                                        DirRX.ProjectPlanner.ProjectPlans.Info
+                                                        DirRX.ProjectPlanner.ProjectPlanRXes.Info
                                                        );
 		}
 	}

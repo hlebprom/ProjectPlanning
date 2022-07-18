@@ -216,4 +216,10 @@
   <data name="Property_ProjectPlanDirRX" xml:space="preserve">
     <value>Основной план проекта</value>
   </data>
+  <data name="Enum_Status_Active" xml:space="preserve">
+    <value>Действующий</value>
+  </data>
+  <data name="Enum_Status_Closed" xml:space="preserve">
+    <value>Закрыт</value>
+  </data>
 </root>
