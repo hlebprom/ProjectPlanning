@@ -1,0 +1,440 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "f2894e4d-a950-497f-a311-1fd7e9665d28",
+  "Name": "ProjectPlanner",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "DirRX.ProjectPlanner.Client",
+  "ClientBaseAssemblyName": "DirRX.ProjectPlanner.ClientBase",
+  "ClientBaseNamespace": "DirRX.ProjectPlanner.ClientBase",
+  "ClientNamespace": "DirRX.ProjectPlanner.Client",
+  "Code": "Projec1",
+  "CompanyCode": "DirRX",
+  "Cover": {
+    "NameGuid": "f899df5c-72c0-4190-aaa7-cc68979a27b1",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "3e20b03d-1094-4b70-a4bb-2ccf3c721340",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "ead2c9b5-edf3-4fb7-9390-037f4698a260",
+      "BackgroundPosition": "Stretch"
+    }
+  },
+  "Dependencies": [
+    {
+      "Id": "bce513a7-4787-4e7c-aa46-694622ec58b1",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    },
+    {
+      "Id": "356e6500-45bc-482b-9791-189b5adedc28",
+      "MaxVersion": "",
+      "MinVersion": "3.4.23.1"
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "647a920e-ebf5-47b3-8aa6-bd9f2831515c"
+    },
+    {
+      "ItemId": "b0af2406-a454-48d5-8e94-e9f69012c8a1",
+      "PreviousItemId": "647a920e-ebf5-47b3-8aa6-bd9f2831515c"
+    },
+    {
+      "ItemId": "e176489c-b248-47b3-9017-07c8e23e870f",
+      "PreviousItemId": "b0af2406-a454-48d5-8e94-e9f69012c8a1"
+    }
+  ],
+  "HandledEvents": [
+    "InitializingServer"
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "DirRX.ProjectPlanner",
+  "IsLicensed": true,
+  "IsVisible": false,
+  "Jobs": [
+    {
+      "NameGuid": "60f15c6f-4015-4eae-844e-cfa0db83e6c3",
+      "Name": "SyncAccessRightsProjectPlanAndProject",
+      "Daily": "Repeat",
+      "GenerateHandler": true,
+      "MonthSchedule": "Monthly",
+      "TimePeriod": 2
+    }
+  ],
+  "Libraries": [
+    {
+      "NameGuid": "c162182d-b69f-460a-824c-dc5a79131c73",
+      "Name": "PlannerApp",
+      "Scope": "Both"
+    },
+    {
+      "NameGuid": "c547d975-efc1-4901-b2e1-98428b66a294",
+      "Name": "Planner",
+      "Scope": "Both"
+    }
+  ],
+  "Overridden": [
+    "IsVisible",
+    "IsLicensed"
+  ],
+  "PublicConstants": [
+    {
+      "Name": "ParentProjectTeam",
+      "ParentClasses": [
+        "Module",
+        "RoleGuid"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"2062682D-745C-4E02-AF2F-26AD229E8C61\")"
+    }
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "CheckProjectPlannerLicence",
+      "Placement": "Client",
+      "ReturnType": "global::System.Boolean",
+      "ReturnTypeFullName": "System.Boolean"
+    },
+    {
+      "Name": "CreateTask",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "activityId",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::Sungero.Workflow.ISimpleTask",
+      "ReturnTypeFullName": "Sungero.Workflow.ISimpleTask, Sungero.Workflow.Interfaces"
+    },
+    {
+      "Name": "CreateTasks",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "activityIds",
+          "ParameterType": "global::System.Collections.Generic.List<global::System.Int32>",
+          "ParameterTypeFullName": "System.Collections.Generic.List"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.Collections.Generic.List<global::Sungero.Workflow.ISimpleTask>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    },
+    {
+      "Name": "GetJsonStringByUri",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "uriModel",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
+    },
+    {
+      "Name": "GetModel",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "projectPlanId",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        },
+        {
+          "Name": "numberVersion",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
+    },
+    {
+      "Name": "GetTasksByIds",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "tasksIds",
+          "ParameterType": "global::System.Collections.Generic.List<global::System.Int32>",
+          "ParameterTypeFullName": "System.Collections.Generic.List"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.Linq.IQueryable<global::Sungero.Workflow.ISimpleTask>",
+      "ReturnTypeFullName": "System.Linq.IQueryable"
+    },
+    {
+      "Name": "GetWebSite",
+      "IsRemote": true,
+      "Placement": "Shared",
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
+    },
+    {
+      "Name": "GetWorkiningDaysInPeriod",
+      "Parameters": [
+        {
+          "Name": "startDate",
+          "ParameterType": "global::System.DateTime",
+          "ParameterTypeFullName": "System.DateTime"
+        },
+        {
+          "Name": "endDate",
+          "ParameterType": "global::System.DateTime",
+          "ParameterTypeFullName": "System.DateTime"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.Int32",
+      "ReturnTypeFullName": "System.Int32"
+    },
+    {
+      "Name": "RunPlannerApp",
+      "Parameters": [
+        {
+          "Name": "webSite",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "projectId",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        },
+        {
+          "Name": "numVersion",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        },
+        {
+          "Name": "employeeId",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        },
+        {
+          "Name": "isReadOnly",
+          "ParameterType": "global::System.Boolean",
+          "ParameterTypeFullName": "System.Boolean"
+        }
+      ],
+      "Placement": "Client",
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "RunPlannerApp",
+      "Parameters": [
+        {
+          "Name": "webSite",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "projectId",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        },
+        {
+          "Name": "activityId",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        },
+        {
+          "Name": "numVersion",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        },
+        {
+          "Name": "employeeId",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        },
+        {
+          "Name": "isReadOnly",
+          "ParameterType": "global::System.Boolean",
+          "ParameterTypeFullName": "System.Boolean"
+        }
+      ],
+      "Placement": "Client",
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "SaveModelFromGanttService",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "modelJson",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "projectPlanId",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        },
+        {
+          "Name": "numVersion",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "SaveModelFromModelString",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "modelJson",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "projectPlan",
+          "ParameterType": "global::DirRX.ProjectPlanner.IProjectPlan",
+          "ParameterTypeFullName": "DirRX.ProjectPlanner.IProjectPlan, Sungero.Domain.Interfaces"
+        },
+        {
+          "Name": "numVersion",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        },
+        {
+          "Name": "isCopyVersion",
+          "ParameterType": "global::System.Boolean",
+          "ParameterTypeFullName": "System.Boolean"
+        },
+        {
+          "Name": "isCopyProject",
+          "ParameterType": "global::System.Boolean",
+          "ParameterTypeFullName": "System.Boolean"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.Collections.Generic.List<global::System.String>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    },
+    {
+      "Name": "SaveModelFromStorageByBinaryBodyId",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "binaryBodyId",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "projectPlanId",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        },
+        {
+          "Name": "version",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "SendTasks",
+      "Parameters": [
+        {
+          "Name": "activityIds",
+          "ParameterType": "global::System.Collections.Generic.List<global::System.Int32>",
+          "ParameterTypeFullName": "System.Collections.Generic.List"
+        },
+        {
+          "Name": "isShowCards",
+          "ParameterType": "global::System.Boolean",
+          "ParameterTypeFullName": "System.Boolean"
+        }
+      ],
+      "Placement": "Client",
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "ShowProjectTasks",
+      "Parameters": [
+        {
+          "Name": "tasksIds",
+          "ParameterType": "global::System.Collections.Generic.List<global::System.Int32>",
+          "ParameterTypeFullName": "System.Collections.Generic.List"
+        }
+      ],
+      "Placement": "Client",
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "WriteJsonBodyToProjectVersion",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "projectPlan",
+          "ParameterType": "global::DirRX.ProjectPlanner.IProjectPlan",
+          "ParameterTypeFullName": "DirRX.ProjectPlanner.IProjectPlan, Sungero.Domain.Interfaces"
+        },
+        {
+          "Name": "numVersion",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "DirRX.ProjectPlanner",
+  "ResourcesKeys": [
+    "SEND_TASK_SUBJECT",
+    "SEND_TASK_ACTIVE_TEXT",
+    "CantEditCompletedProject",
+    "ProjectPlannerNoLicense",
+    "ExceprionMessage",
+    "ProjectsFileTypeName",
+    "AplicationName",
+    "ProjectPlanName",
+    "EmployeeNotFound"
+  ],
+  "ServerAssemblyName": "DirRX.ProjectPlanner.Server",
+  "ServerNamespace": "DirRX.ProjectPlanner.Server",
+  "SharedAssemblyName": "DirRX.ProjectPlanner.Shared",
+  "SharedNamespace": "DirRX.ProjectPlanner.Shared",
+  "SpecialFolders": [],
+  "Version": "3.5.0.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 6
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}
