@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SEND_TASK_SUBJECT" xml:space="preserve">
+    <value>Perform work on "{0}"</value>
+  </data>
+  <data name="SEND_TASK_ACTIVE_TEXT" xml:space="preserve">
+    <value>It is necessary to carry out work on linked stage.</value>
+  </data>
+  <data name="CantEditCompletedProject" xml:space="preserve">
+    <value>Cannot modify activities for completed project.</value>
+  </data>
+  <data name="ProjectPlannerNoLicense" xml:space="preserve">
+    <value>Для работы с модулем планирования проектов необходима лицензия</value>
+  </data>
+  <data name="ExceprionMessage" xml:space="preserve">
+    <value>No rights to create project stages</value>
+  </data>
+  <data name="ProjectsFileTypeName" xml:space="preserve">
+    <value>Projects</value>
+  </data>
+  <data name="AplicationName" xml:space="preserve">
+    <value>Встроенный редактор планов</value>
+  </data>
+  <data name="ProjectPlanName" xml:space="preserve">
+    <value>Project plan</value>
+  </data>
+  <data name="EmployeeNotFound" xml:space="preserve">
+    <value>Employee {0} with ID {1} not found</value>
+  </data>
+  <data name="ProjectSettingsName" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="ProjectPlanLockedError" xml:space="preserve">
+    <value>GrantRightsActivityResponsible. Не удалось выдать права для {0}. План проекта с ИД {1} заблокирован пользователем {2}.</value>
+  </data>
+  <data name="ProjectLockedError" xml:space="preserve">
+    <value>GrantRightsActivityResponsible. Не удалось выдать права для {0}. Проект с ИД {1} заблокирован пользователем {2}.</value>
+  </data>
+  <data name="EmployeeResourceTypeName" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="EmployeeResourceTypeUnit" xml:space="preserve">
+    <value>h.</value>
+  </data>
+  <data name="RoomResourceTypeName" xml:space="preserve">
+    <value>Помещение</value>
+  </data>
+  <data name="TransportResourceTypeName" xml:space="preserve">
+    <value>Транспорт</value>
+  </data>
+  <data name="TransportResourceTypeUnit" xml:space="preserve">
+    <value>м/ч.</value>
+  </data>
+  <data name="MaterialResourcesTypeName" xml:space="preserve">
+    <value>MaterialResources</value>
+  </data>
+  <data name="WebClientURIEmptyError" xml:space="preserve">
+    <value>Не указан адрес веб-клиента в настройках. Обратитесь к администратору системы.</value>
+  </data>
+  <data name="EmployeeForActivityNotFound" xml:space="preserve">
+    <value>Employee with Id {0} for activity {1} not founded in database</value>
+  </data>
+  <data name="EmployeeIdNotFilled" xml:space="preserve">
+    <value>Field 'Id' for activity {0} not filled</value>
+  </data>
+  <data name="NotEnoughRightsToUpdateProject" xml:space="preserve">
+    <value>Not enough rights to update project {0}</value>
+  </data>
+  <data name="ResourceNotFound" xml:space="preserve">
+    <value>Resource with id {0} not found</value>
+  </data>
+  <data name="CannotConvert" xml:space="preserve">
+    <value>Cannot convert: project plan with id = {0} is locked by {1}</value>
+  </data>
+  <data name="LastVersionAutoSigned" xml:space="preserve">
+    <value>Autosigned converted version '{0}' while update solution to version 2.3</value>
+  </data>
+  <data name="NullReferenceResourceTypeException" xml:space="preserve">
+    <value>The Type property of the ProjectResourceType({0}) must not contain a null value</value>
+  </data>
+  <data name="EmployeeIdNotFoundExeption" xml:space="preserve">
+    <value>Employee with id:{0} not found in the system</value>
+  </data>
+  <data name="ExecutionRequestExeption" xml:space="preserve">
+    <value>{0} Error execution GetOrCreateResourceId for employeeId={1}</value>
+  </data>
+  <data name="GetCapacityException" xml:space="preserve">
+    <value>An exception occurred GetCapacity with parameters: resourcesIds: {0}, startDate: {1}, EndDate: {2}. {3}</value>
+  </data>
+  <data name="LastVersionAutoSignedPrefix" xml:space="preserve">
+    <value>Autosigned converted version</value>
+  </data>
+  <data name="NonExistentPlanIdExeption" xml:space="preserve">
+    <value>An exeption occured UpdateResourcesDataDto. Non-existent project plan {0}</value>
+  </data>
+  <data name="TaskMaxDeadLineExeption" xml:space="preserve">
+    <value>Tas with id {0} must have required parameter MaxDeadline</value>
+  </data>
+  <data name="UpdatePlanDataException" xml:space="preserve">
+    <value>An exeption occured UpdatePlanData:  projectPlanId {0}, numberVersion {1}.</value>
+  </data>
+  <data name="SearchRecipientsException" xml:space="preserve">
+    <value>Failed recipients search for string {0}</value>
+  </data>
+  <data name="CheckPlanExistsExeption" xml:space="preserve">
+    <value>An exception occurred CheckPlanExists for planId={0} and versionNumber={1}</value>
+  </data>
+  <data name="ErrorWhileTryOpenWebClient" xml:space="preserve">
+    <value>Could not get the web client address.</value>
+  </data>
+  <data name="CouldNotConvertProjectPlan" xml:space="preserve">
+    <value>Could not convert project plan {0}</value>
+  </data>
+  <data name="ResourceLinksTableNotFoundExceptionText" xml:space="preserve">
+    <value>ResourceLinks table is not found.</value>
+  </data>
+  <data name="HealthCheckExceptionText" xml:space="preserve">
+    <value>An error occurred while running solutions health check:</value>
+  </data>
+</root>

@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="sf_81fa363f_766c_423b_818a_e48efe57c3d4" xml:space="preserve">
+    <value>Project Documents</value>
+  </data>
+  <data name="sf_03a19579_a42e_4974_8a8c_820eafd4bcaa" xml:space="preserve">
+    <value>Projects plans</value>
+  </data>
+  <data name="FilterPanel_Date_f40fdd3c735c4ca7aab24b8b503abc19" xml:space="preserve">
+    <value>Modified</value>
+  </data>
+  <data name="FilterPanel_Status_665f09adb8114d468cb1331258f9f070" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="FilterPanel_Active_1bd7e863fb784f7eb41ade02cfc4249b" xml:space="preserve">
+    <value>Execution</value>
+  </data>
+  <data name="FilterPanel_Closed_e5bc3330d17f4003ae48b4eab9adfcd2" xml:space="preserve">
+    <value>Closed</value>
+  </data>
+  <data name="FilterPanel_StartGroup_c71d808c0bc7491a9b5621ab26db8b88" xml:space="preserve">
+    <value>Start date</value>
+  </data>
+  <data name="FilterPanel_StartPeriodThisMonth_5e83d99caaf94699a46210bd46de3766" xml:space="preserve">
+    <value>This month</value>
+  </data>
+  <data name="FilterPanel_StartPeriodManual_ebb9f6928d0341dc9a38ee3d3b6cf1fc" xml:space="preserve">
+    <value>User-defined period</value>
+  </data>
+  <data name="FilterPanel_FinishGroup_4376e70058a447568fcb2641dc791d77" xml:space="preserve">
+    <value>Finish date</value>
+  </data>
+  <data name="FilterPanel_FinishPeriodThisMonth_1134b81dea1745e38d480d8a13dfa59b" xml:space="preserve">
+    <value>This month</value>
+  </data>
+  <data name="FilterPanel_FinishPeriodManual_c178178856b24fe998ef7dfd59f55bf3" xml:space="preserve">
+    <value>User-defined period</value>
+  </data>
+  <data name="FilterPanel_Initiation_1ed427687c6349c9af4c83bcc6da9fdb" xml:space="preserve">
+    <value>Initiation</value>
+  </data>
+  <data name="FilterPanel_Closing_ec4b2d870a4d4d4fbcc8d0c2e024d891" xml:space="preserve">
+    <value>Closure</value>
+  </data>
+  <data name="JobDisplayName_be8a8c8c9ebf415e8260d4437b76e3d1" xml:space="preserve">
+    <value>Projects. Grant access rights to documents automatically</value>
+  </data>
+  <data name="JobDescription_be8a8c8c9ebf415e8260d4437b76e3d1" xml:space="preserve">
+    <value>Grant access rights to documents automatically</value>
+  </data>
+  <data name="CoverAction_ShowResourcesDirRX" xml:space="preserve">
+    <value>Show Resources</value>
+  </data>
+  <data name="CoverDescription_ShowResourcesDirRX" xml:space="preserve">
+    <value>Show resources</value>
+  </data>
+  <data name="CoverAction_ShowResourcesTypeDirRX" xml:space="preserve">
+    <value>Show Resource type</value>
+  </data>
+  <data name="CoverDescription_ShowResourcesTypeDirRX" xml:space="preserve">
+    <value>Manage resource types.</value>
+  </data>
+</root>

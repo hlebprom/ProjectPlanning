@@ -1,0 +1,75 @@
+{
+  "$type": "Sungero.Metadata.SolutionMetadata, Sungero.Metadata",
+  "NameGuid": "bce513a7-4787-4e7c-aa46-694622ec58b1",
+  "Name": "ProjectPlanning",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "DirRX.ProjectPlanning.Client",
+  "ClientBaseAssemblyName": "DirRX.ProjectPlanning.ClientBase",
+  "ClientBaseNamespace": "DirRX.ProjectPlanning.ClientBase",
+  "ClientNamespace": "DirRX.ProjectPlanning.Client",
+  "Code": "Project",
+  "CompanyCode": "DirRX",
+  "Cover": {
+    "NameGuid": "c8b67370-1b3f-414c-9093-ed073a0c2474",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "496ac849-297e-413f-bbba-86d1e969e5dd",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "e653a4b2-5f40-4644-bf06-f8b17aa13d88",
+      "BackgroundPosition": "Stretch"
+    }
+  },
+  "DesktopViews": [],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "31dbf2da-5396-438a-b337-cb4bfb3f19f3"
+    },
+    {
+      "ItemId": "90b73694-ebe4-4982-ac5f-3612056739f9",
+      "PreviousItemId": "31dbf2da-5396-438a-b337-cb4bfb3f19f3"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "DirRX.ProjectPlanning",
+  "OrderedSpecialFolders": [
+    {
+      "NameGuid": "06b4d7f2-3eeb-4cb7-bf2f-191717a913f6",
+      "ParentFolderId": "201bcad8-a5c4-4ef4-ba90-55334e02dd29"
+    },
+    {
+      "NameGuid": "0ae51445-3818-4794-8165-a9f69c58e00d",
+      "ParentFolderId": "eb72a985-606c-4647-ba0c-1389928a4e17"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "DirRX.ProjectPlanning",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "DirRX.ProjectPlanning.Server",
+  "ServerNamespace": "DirRX.ProjectPlanning.Server",
+  "SharedAssemblyName": "DirRX.ProjectPlanning.Shared",
+  "SharedNamespace": "DirRX.ProjectPlanning.Shared",
+  "SpecialFolders": [],
+  "Version": "2.5.4200.13",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "SolutionMetadata",
+      "Number": 6
+    },
+    {
+      "Type": "ModuleMetadata",
+      "Number": 6
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

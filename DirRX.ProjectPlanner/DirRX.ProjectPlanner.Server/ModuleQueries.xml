@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<queries>
+  <query key="SelectDocflowParamsValue">
+    <mssql><![CDATA[SELECT Value FROM Sungero_Docflow_Params WHERE ([Key] = '{0}')]]></mssql>
+    <postgres><![CDATA[SELECT Value FROM Sungero_Docflow_Params WHERE (Key = '{0}')]]></postgres>
+  </query>
+  <query key="InsertOrUpdateDocflowParamsValue">
+    <mssql><![CDATA[if not exists(select 1 from [dbo].[Sungero_Docflow_Params] where [Key] = '{0}')
+  insert [Sungero_Docflow_Params] ([Key],Value) values ('{0}', '{1}')
+else UPDATE Sungero_Docflow_Params SET Value = '{1}' WHERE ([Key] = '{0}')]]></mssql>
+    <postgres><![CDATA[do $$
+begin
+  if not exists(select 1 from Sungero_Docflow_Params where Key = '{0}')
+  then
+    insert into Sungero_Docflow_Params (Key, Value) values ('{0}', '{1}');
+  else
+    UPDATE Sungero_Docflow_Params SET Value = '{1}' WHERE (Key = '{0}');
+  end if;
+end$$;]]></postgres>
+  </query>
+  <query key="RestorePlanLinks">
+    <mssql><![CDATA[update DirRX_Projec1_PrjctActivity
+    set DirRX_Projec1_PrjctActivity.ProjectPlan = temp_projectplanner.projectplan_name
+from temp_projectplanner, DirRX_Projec1_PrjctActivity
+where temp_projectplanner.id = DirRX_Projec1_PrjctActivity.id;
+
+truncate table temp_projectplanner
+
+update Sungero_Docflow_Project 
+    set Sungero_Docflow_Project.ProjectPlanDir_Project_DirRX = temp_projectplanner_projects.projectplan_name
+    from temp_projectplanner_projects, Sungero_Docflow_Project
+    where temp_projectplanner_projects.id = Sungero_Docflow_Project.id;
+    
+truncate table temp_projectplanner_projects]]></mssql>
+    <postgres><![CDATA[update DirRX_Projec1_PrjctActivity
+    set ProjectPlan = temp_projectplanner.projectplan_name
+from temp_projectplanner
+where temp_projectplanner.id = DirRX_Projec1_PrjctActivity.id;
+
+truncate table temp_projectplanner;
+
+update Sungero_Docflow_Project
+    set ProjectPlanDir_Project_DirRX = temp_projectplanner_projects.projectplan_name
+from temp_projectplanner_projects
+where temp_projectplanner_projects.id = Sungero_Docflow_Project.id;
+
+truncate table temp_projectplanner_projects;]]></postgres>
+  </query>
+  <query key="GetPlanOldTasks">
+    <default><![CDATA[select DISTINCT MainTask from Sungero_WF_Attachment 
+ where AttachmentTypeGuid = '647a920e-ebf5-47b3-8aa6-bd9f2831515c' and AttachmentId = {0}]]></default>
+  </query>
+  <query key="CreateResourceLinksIfNotExist">
+    <mssql><![CDATA[if not exists (select * from sysobjects where name='ResourceLinks')
+    CREATE TABLE ResourceLinks (
+   project_activity_id int NOT NULL,
+   resource_id int NOT NULL,
+   average_busy real NOT NULL
+);]]></mssql>
+    <postgres><![CDATA[CREATE TABLE IF NOT EXISTS ResourceLinks (
+   project_activity_id int NOT NULL,
+   resource_id int NOT NULL,
+   average_busy real NOT NULL
+);]]></postgres>
+  </query>
+  <query key="CheckResourceLinksTable">
+    <mssql><![CDATA[select COUNT(*) FROM sysobjects WHERE name = 'ResourceLinks']]></mssql>
+    <postgres><![CDATA[select COUNT(*) from information_schema.tables where table_name = 'ResourceLinks']]></postgres>
+  </query>
+</queries>
