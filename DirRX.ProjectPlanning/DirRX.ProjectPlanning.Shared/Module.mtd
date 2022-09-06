@@ -37,7 +37,16 @@
   "Importance": "Medium",
   "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
   "InterfaceNamespace": "DirRX.ProjectPlanning",
-  "OrderedSpecialFolders": [],
+  "OrderedSpecialFolders": [
+    {
+      "NameGuid": "06b4d7f2-3eeb-4cb7-bf2f-191717a913f6",
+      "ParentFolderId": "201bcad8-a5c4-4ef4-ba90-55334e02dd29"
+    },
+    {
+      "NameGuid": "0ae51445-3818-4794-8165-a9f69c58e00d",
+      "ParentFolderId": "eb72a985-606c-4647-ba0c-1389928a4e17"
+    }
+  ],
   "PublicStructures": [],
   "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
   "ResourceInterfaceNamespace": "DirRX.ProjectPlanning",
